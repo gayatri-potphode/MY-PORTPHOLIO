@@ -1,0 +1,199 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color:peachpuff;
+    color: black;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu li a {
+    color: #0f0101;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .menu li a:hover {
+    color:peru;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+  }
+  
+  .hero h2 {
+    font-size: 24px;
+    color:rgb(215, 109, 16);
+    margin-bottom: 10px;
+  }
+  
+  .hero h1 {
+    font-size: 40px;
+    margin: 10px 0;
+  }
+  
+  .hero p {
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 18px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px 8px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .primary {
+    background-color:peachpuff;
+    color: black;
+  }
+  
+  .primary:hover {
+    background-color: peru;
+  }
+  
+  .secondary {
+    background-color: #eeeeee;
+    color: #333;
+  }
+  
+  .secondary:hover {
+    background-color: #ddd;
+  }
+  
+  .image {
+    text-align: center;
+    
+    padding: 50px;
+  }
+  
+  .image img {
+    max-width: 400px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  section {
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  
+  section:nth-of-type(even) {
+    background-color: #f9f9f9;
+  }
+  
+  section h2, section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .skill {
+    background-color:peachpuff;
+    color:black;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .cont_c{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 5px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+
+  .cont{
+  background-color:peachpuff;
+  color:black;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  ul {
+    max-width: 700px;
+    margin: 0 auto;
+    list-style: disc;
+    padding-left: 40px;
+  }
+
+  
+  .heading span {
+    color: peru;
+  }
+
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px 20px;
+    }
+  
+    .menu {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .input-box input {
+      flex: 1 1 100%;
+    }
+
+    .cont{
+      max-width: 200px;
+    }
+  }
